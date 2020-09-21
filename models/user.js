@@ -230,6 +230,37 @@ var user = {
             });
         });
     },
+
+    updateReport: function (res, body) {
+        // Variables
+        const kmom = body.kmom;
+        const report = body.report;
+
+        // SQL
+        const sql = "UPDATE reports SET kmom = ?, report = ? WHERE kmom = ?";
+
+        // Parameters
+        const parameters = [kmom, report, kmom];
+
+        // Executes SQL
+        db.run(sql, parameters, (err) => {
+            if (err) {
+                return res.status(500).json({
+                    errors: {
+                        status: 500,
+                        source: "/reports",
+                        title: "Database error",
+                        detail: err.message,
+                    },
+                });
+            }
+            return res.status(200).json({
+                data: {
+                    message: "Report successfully updated.",
+                },
+            });
+        });
+    },
 };
 
 module.exports = user;

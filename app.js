@@ -10,6 +10,7 @@ const bodyParser = require("body-parser"); // Body-parser extracts the entire bo
 
 // Imports routes defined in routes dir
 const reports = require("./routes/reports.js");
+const updateReport = require("./routes/updatereport.js");
 const week = require("./routes/week.js");
 const register = require("./routes/register.js");
 const login = require("./routes/login.js");
@@ -36,7 +37,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Use routes
-app.use("/reports/", reports);
+app.use("/updatereport", updateReport);
+app.use("/reports", reports);
 app.use("/reports/week/", week);
 app.use("/register", register);
 app.use("/login", login);
