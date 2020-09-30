@@ -1,6 +1,6 @@
 # Jsframework-vue-backend
 
-## Project setup
+[![Build Status](https://travis-ci.org/ollebergkvist/jsframework-vue-backend.svg?branch=master)](https://travis-ci.org/ollebergkvist/jsframework-vue-backend)
 
 ### Clone repo
 
