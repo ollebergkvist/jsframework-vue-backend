@@ -25,7 +25,7 @@ npm run lint
         },
     };
 
-    res.json(data);
+    res.status(200).json(data);
 });
 
 router.get("/2", function (req, res, next) {
@@ -46,7 +46,7 @@ npm start
         },
     };
 
-    res.json(data);
+    res.status(200).json(data);
 });
 
 module.exports = router;

@@ -5,7 +5,7 @@
 ### Clone repo
 
 ```
-clone https://github.com/ollebergkvist/jsframework-vue-backend
+git clone https://github.com/ollebergkvist/jsframework-vue-backend
 ```
 
 ### Install npm packages

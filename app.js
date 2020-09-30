@@ -45,9 +45,7 @@ app.use("/login", login);
 app.use("/", index);
 
 // Starts up server which listens to port 1337
-// const server =
-
-app.listen(port, function () {
+const server = app.listen(port, function () {
     console.log(`ME-API listening on port ${port}!`);
 });
 
@@ -60,4 +58,4 @@ app.use((req, res, next) => {
     next(err);
 });
 
-// // module.exports = server;
+module.exports = server; // Export server in order to use it in test files

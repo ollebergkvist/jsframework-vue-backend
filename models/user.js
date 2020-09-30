@@ -1,6 +1,7 @@
 // Essentials
-const sqlite3 = require("sqlite3").verbose();
-const db = new sqlite3.Database("./db/texts.sqlite");
+// const sqlite3 = require("sqlite3").verbose();
+// const db = new sqlite3.Database("./db/texts.sqlite");
+const db = require("../db/database.js");
 const bcrypt = require("bcryptjs");
 const saltRounds = 10;
 const validator = require("email-validator");
