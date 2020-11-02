@@ -92,7 +92,7 @@ Användaren ska kunna navigera till reports sidan genom att klicka på navigerin
   res.status(200).json(data);
 });
 
-router.get("/10", function (req, res, next) {
+router.get("/7", function (req, res, next) {
   const data = {
     data: {
       markdown: `
